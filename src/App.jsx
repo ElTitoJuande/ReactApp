@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Card from './components/Card'
 import Hijo from './components/Hijo';
 import Componente from './components/Componente';
+import Post from './components/Post';
 
 function App() {
 
@@ -15,11 +16,12 @@ function App() {
   // }
 
   // const [nombre, setNombre] = useState(" ");
-  const [estado, setEstado] = useState(true);
+  
+  // const [estado, setEstado] = useState(true);
 
-  function ocultarMostrar() {
-    setEstado(!estado);
-  }
+  // function ocultarMostrar() {
+  //   setEstado(!estado);
+  // }
 
 
   return (
@@ -30,9 +32,11 @@ function App() {
       {/* <h2>Hola usuario: {nombre}</h2>
       <Hijo login={setNombre} /> */}
 
-      <button onClick={ocultarMostrar}>{estado ? "Ocultar" : "Mostrar"}</button>
-      
-      {estado && <Componente />}
+      {/* <button onClick={ocultarMostrar}>{estado ? "Ocultar" : "Mostrar"}</button>
+
+      {estado && <Componente />} */}
+
+      <Post/>
     </>
   )
 }
