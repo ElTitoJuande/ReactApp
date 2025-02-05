@@ -1,0 +1,15 @@
+.card{
+    min-height: 300px;
+    margin: 20px 0;
+    div{
+        display: flex;
+        flex-flow: wrap;
+        a{
+            margin-top: auto;
+            border: none;
+            background-color: blueviolet;
+            padding: 10px 20px;
+
+        }
+    }
+}
