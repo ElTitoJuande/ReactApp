@@ -3,6 +3,12 @@ import Card from './components/Card'
 import Hijo from './components/Hijo';
 import Componente from './components/Componente';
 import Post from './components/Post';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Contacto from './pages/Contacto';
+import Soporte from './pages/Soporte';
+import Nav from './components/Nav';
+import Error404 from './pages/Error404';
 
 function App() {
 
@@ -16,7 +22,7 @@ function App() {
   // }
 
   // const [nombre, setNombre] = useState(" ");
-  
+
   // const [estado, setEstado] = useState(true);
 
   // function ocultarMostrar() {
@@ -36,7 +42,14 @@ function App() {
 
       {estado && <Componente />} */}
 
-      <Post/>
+      {/* <Post/> */}
+      <Nav/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/soporte' element={<Soporte/>}/>
+        <Route path='*' element={<Error404/>}/>
+      </Routes>
     </>
   )
 }

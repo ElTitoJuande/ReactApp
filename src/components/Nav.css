@@ -1,0 +1,30 @@
+ul,
+li {
+    list-style: none;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+
+    li {
+        margin-left: 20px;
+
+        a {
+            background-color: rgb(0, 255, 149);
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+
+        }
+    }
+}
